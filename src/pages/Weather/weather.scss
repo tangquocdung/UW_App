@@ -1,0 +1,18 @@
+.weather {
+  width: 100%;
+  display: flex;
+
+  .weatherContainer {
+    flex: 6;
+  }
+
+  .wrapper__weather {
+    background-color: transparent;
+    background-image: url("./images/img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px;
+    width: 100%;
+  }
+}

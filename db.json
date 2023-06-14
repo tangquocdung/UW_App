@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "userName": "Tăng Quốc Dũng",
+      "password": "123456",
+      "email": "dung2003@gmail.com",
+      "firstName": "Dũng",
+      "surName": "Tăng",
+      "fullName": "Tăng Quốc Dũng",
+      "address": "TPHCM",
+      "id": 1
+    },
+    {
+      "userName": "Trần Nhựt Tiến",
+      "password": "123456",
+      "email": "tien2003@gmail.com",
+      "firstName": "Tiến",
+      "surName": "Nhựt",
+      "fullName": "Trần Nhựt Tiến",
+      "address": "Trà Vinh",
+      "id": 2
+    },
+    {
+      "userName": "Trần Duy Phúc",
+      "password": "123456",
+      "email": "phuc2003@gmail.com",
+      "firstName": "Phúc",
+      "surName": "Trần",
+      "fullName": "Trần Duy Phúc",
+      "address": "Thủ Đức",
+      "id": 3
+    },
+    {
+      "userName": "Châu Gia Bảo",
+      "password": "123456",
+      "email": "bao2003@gmail.com",
+      "firstName": "Bảo",
+      "surName": "Châu",
+      "fullName": "Châu Gia Bảo",
+      "address": "TPHCM",
+      "id": 4
+    },
+    {
+      "userName": "Văn Công Quốc Cường",
+      "password": "123456",
+      "email": "cuong2003@gmail.com",
+      "firstName": "Cường",
+      "surName": "Văn",
+      "fullName": "Văn Công Quốc Cường",
+      "address": "TPHCM",
+      "id": 5
+    },
+    {
+      "userName": "Huỳnh Gia Huy",
+      "password": "123456",
+      "email": "huy2003@gmail.com",
+      "firstName": "Huy",
+      "surName": "Huỳnh",
+      "fullName": "Huỳnh Gia Huy",
+      "address": "Đồng Nai",
+      "id": 6
+    },
+    {
+      "userName": "Lê Đình Thiện",
+      "password": "123456",
+      "email": "thien2003@gmail.com",
+      "firstName": "Thiện",
+      "surName": "Lê",
+      "fullName": "Lê Đình Thiện",
+      "address": "TPHCM",
+      "id": 7
+    }
+  ]
+}

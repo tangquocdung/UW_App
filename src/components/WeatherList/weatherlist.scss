@@ -1,0 +1,23 @@
+.wrapper__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .horizontal-list {
+    background: rgb(1, 1, 1, 0.4);
+    padding: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    .horizontal-list-item {
+      padding: 16px 45px;
+      color: #fff;
+      display: flex;
+      gap: 40px;
+      margin: -6%;
+
+      .horizontal-list-item:hover {
+        color: #000;
+      }
+    }
+  }
+}

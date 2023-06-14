@@ -1,0 +1,30 @@
+.title__weather {
+  color: #000;
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  .text__weather {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 20px;
+
+    .temp {
+      font-size: 120%;
+      text-align: center;
+      margin-top: 80px;
+      font-weight: 600;
+
+      .wrapper__weather__detail {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+  }
+}
