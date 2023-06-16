@@ -8,17 +8,26 @@ import {
 import "./login.scss";
 import "./images/img3.jpg";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { auth } from "../../Firebase/Firebase.config";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {
   const navigate = useNavigate();
-  const login = () => {
-    message.success("Login successful!");
-    navigate("/");
+  const login = (value) => {
+    signInWithEmailAndPassword(auth, value.myEmail, value.myPassword)
+      .then(() => {
+        message.success("Login successful!");
+        navigate("/home");
+      })
+      .catch((error) => {
+        message.error("Wrong Email or Password");
+      });
   };
   return (
     <div className="app__form">
       <Form className="login__form" onFinish={login}>
-        <Typography.Title>Welcome Back !</Typography.Title>
+        <Typography.Title>Login Account !</Typography.Title>
         <Form.Item
           rules={[
             {
@@ -48,7 +57,11 @@ const Login = () => {
         <Button type="primary" htmlType="submit" block>
           Login
         </Button>
-        <Divider style={{ borderColor: "black" }}>or Login with</Divider>
+        <Link to={"/register"}>
+          <Divider style={{ borderColor: "black" }}>
+            Don't have an account?
+          </Divider>
+        </Link>
         <div className="social__login">
           <GoogleOutlined
             className="social__icon"

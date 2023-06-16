@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   SearchOutlined,
   GlobalOutlined,
@@ -7,10 +7,14 @@ import {
   MessageOutlined,
   UnorderedListOutlined,
 } from "@ant-design/icons";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
+import { DarkModeContext } from "../../Context/DarkModeContext";
 
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -22,6 +26,12 @@ const Navbar = () => {
           <div className="item">
             <GlobalOutlined className="icon" />
             English
+          </div>
+          <div className="item">
+            <DarkModeOutlinedIcon
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
+            />
           </div>
           <div className="item">
             <InstagramOutlined className="icon" />

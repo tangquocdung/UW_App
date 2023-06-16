@@ -7,15 +7,20 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Update from "./pages/Update/Update";
 import Weather from "./pages/Weather/Weather";
+import "./Dark/Dark.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "./Context/DarkModeContext";
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="App">
+    <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
+            <Route path="home" element={<Home />} />
+            <Route index element={<Login />} />
             <Route path="register" element={<Register />} />
             <Route path="weather" element={<Weather />} />
             <Route path="users">

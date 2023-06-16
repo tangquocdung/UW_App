@@ -6,6 +6,7 @@ import Charts from "../../components/Charts/Charts";
 import List from "../../components/Table/Table";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Details = () => {
   const [data, setData] = useState([]);
@@ -25,7 +26,9 @@ const Details = () => {
         <Navbar />
         <div className="top">
           <div className="left">
-            <div className="editButton">Edit</div>
+            <Link to={"/users"}>
+              <div className="editButton">Back</div>
+            </Link>
             <h1 className="title">Information</h1>
             <div className="item">
               <div className="single">
