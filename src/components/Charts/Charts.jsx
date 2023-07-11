@@ -5,7 +5,6 @@ import {
   Area,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
@@ -38,7 +37,6 @@ const Charts = ({ aspect, title }) => {
           </defs>
           <XAxis dataKey="name" stroke="gray" />
           <YAxis />
-          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <Tooltip />
           <Area
             type="monotone"

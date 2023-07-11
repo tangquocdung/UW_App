@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { auth } from "../../Firebase/Firebase.config";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { textDecoration } from "@chakra-ui/react";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -79,6 +80,12 @@ const Login = () => {
             style={{ color: "cyan" }}
           />
         </div>
+        <Link
+          to={"/forgotpassword"}
+          style={{ textDecoration: "underline", color: "#000" }}
+        >
+          <Divider>Forgot Password!</Divider>
+        </Link>
       </Form>
     </div>
   );

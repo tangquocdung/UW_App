@@ -19,7 +19,7 @@ const Register = () => {
     createUserWithEmailAndPassword(auth, value.myEmail, value.myPassword)
       .then(() => {
         message.success("Register successful!");
-        navigate("/login");
+        navigate("/");
       })
       .catch((error) => {
         message.error(error.message);
@@ -55,11 +55,9 @@ const Register = () => {
         >
           <Input.Password placeholder="Enter your password" />
         </Form.Item>
-        <Link to={"/"}>
-          <Button type="primary" htmlType="submit" block onSubmit={register}>
-            Register
-          </Button>
-        </Link>
+        <Button type="primary" htmlType="submit" block>
+          Register
+        </Button>
         <Link to={"/"}>
           <Divider style={{ borderColor: "black" }}>
             Already have an account?

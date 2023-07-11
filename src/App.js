@@ -10,6 +10,7 @@ import Weather from "./pages/Weather/Weather";
 import "./Dark/Dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./Context/DarkModeContext";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -22,6 +23,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route index element={<Login />} />
             <Route path="register" element={<Register />} />
+            <Route path="forgotpassword" element={<ForgotPassword />} />
             <Route path="weather" element={<Weather />} />
             <Route path="users">
               <Route index element={<List />} />

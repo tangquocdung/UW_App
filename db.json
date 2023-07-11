@@ -1,16 +1,6 @@
 {
   "users": [
     {
-      "userName": "Tăng Quốc Dũng",
-      "password": "123456",
-      "email": "dung2003@gmail.com",
-      "firstName": "Dũng",
-      "surName": "Tăng",
-      "fullName": "Tăng Quốc Dũng",
-      "address": "TPHCM",
-      "id": 1
-    },
-    {
       "userName": "Trần Nhựt Tiến",
       "password": "123456",
       "email": "tien2003@gmail.com",

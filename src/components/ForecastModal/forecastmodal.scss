@@ -1,0 +1,75 @@
+.box {
+  cursor: pointer;
+
+
+  .text_forecastmodal {
+    color: #5e82f4;
+    font-weight: 500;
+    font-size: 23px;
+    .text_forecastmodals {
+      color: #5e82f4;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+.closebutton {
+  padding-left: 450px;
+  line-height: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fff;
+  display: flex;
+  cursor: pointer;
+}
+
+.box_forecastmodal_tqd {
+  padding: 60px !important;
+
+  .box_forecastmodal_dqt {
+    background-color: #5e82f4;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+    .text_forecastmodal_text {
+      font-weight: 500;
+      color: #fff;
+      font-size: 18px;
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+
+      .grid_forecast {
+        grid-template-columns: 50% 50%;
+      }
+    }
+  }
+
+  .text {
+    color: #5e82f4;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .box_fore {
+    border-radius: 30px;
+    background-color: #5e82f4;
+    padding-bottom: 10px;
+    padding-left: 15%;
+  }
+}
+.chakra-modal__content-container {
+  width: 30vw !important;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.css-1oxhx2p {
+  position: absolute !important;
+  top: 51% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+

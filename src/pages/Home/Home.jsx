@@ -7,6 +7,7 @@ import Featured from "../../components/Featured/Featured";
 import Charts from "../../components/Charts/Charts";
 import Table from "../../components/Table/Table";
 
+
 const Home = () => {
   return (
     <div className="home">

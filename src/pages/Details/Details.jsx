@@ -9,15 +9,15 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Details = () => {
-  const [data, setData] = useState([]);
-  const { userId } = useParams();
-
   useEffect(() => {
     axios
       .get("http://localhost:3001/users/" + userId)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
+
+  const [data, setData] = useState([]);
+  const { userId } = useParams();
 
   return (
     <div className="details">

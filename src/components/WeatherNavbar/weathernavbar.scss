@@ -1,0 +1,50 @@
+.input_navbar {
+  border: none;
+  background-color: #fff;
+  padding: 12px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.button_navbar {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  background-color: #5e82f4;
+
+  &:hover {
+    background-color: #5e82f4;
+  }
+}
+.css-gjxt2o {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-inline-end: 10px;
+}
+
+.button_weathernavbar {
+  cursor: pointer;
+  background-color: #5e82f4;
+  color: #fff;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  padding: 6px 15px;
+
+  &:hover {
+    background-color: #5e82f4;
+  }
+}
+.text_weathernavbar {
+  color: #000;
+  font-weight: 500;
+  font-size: 35px;
+  margin-right: 160px;
+}
